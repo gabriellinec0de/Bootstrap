@@ -8,6 +8,25 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- COMIENZO DE OFFCANVAS -->
+    <div class="offcanvas offcanvas-start" id="demo">
+        <div class="offcanvas-header">Perfil Profesional
+            <h1 class="offcanvas-title"></h1>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+        <p><img src="img/img_avatar1.png" alt="" width="350px"></p>
+        <p>Nombre: Gabriel chavez bautista</p>
+        <P>Carrera: Pregrado de ingenieria de sistemas</P>
+        <p>Estado: Inactivo</p>
+        <p>Edad: 19 años</p>
+        <p>Expariencia: 0 años</p>
+        <p>Especializacion: Desarrollo de software</p>
+        <button class="btn btn-secondary" type="button">un boton we</button>
+        </div>
+    </div>
+    <!-- FIN DE OFFCANVAS -->
+
     <!-- INICIO DEL NAV -->
     <nav class="navbar navbar-expand-lg bg-warning">
         <div class="container-fluid" >
@@ -89,12 +108,28 @@
 
     <div class="container">
         <h2>container</h2>
-        <button type="button" class="btn btn-success">Success</button>
+        <!--BOTON OPEN OFFCANVAS  -->
+        <button class="btn btn-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+            VER OFFCANVAS</button>
+        <!--BOTON OPEN OFFCANVAS  -->
+
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam itaque temporibus quam excepturi fuga sunt assumenda provident adipisci, reiciendis consequatur eius. Inventore, aspernatur at facere sint qui debitis repudiandae libero?</p>
     </div>
     <div class="container-fluid">
         <h2>container-fluid</h2>
-        <button type="button" class="btn btn-primary">Success</button>
+        <!-- INICIO CARDS -->
+        <div class="container mt-3">
+            <h2>Card Image</h2>
+            <p>Image at the top (card-img-top):</p>
+            <div class="card" style="width:400px">
+            <img class="card-img-top" src="img/img_avatar1.png" alt="Card image" style="width:100%">
+            <div class="card-body">
+                <h4 class="card-title">GABRIEL CHAVEZ</h4>
+                <p class="card-text">INGENIERO DE SISTEMAS</p>
+                <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" >Ver Perfil</a>
+            </div>
+            </div>
+        <!-- FIN CARDS -->
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, beatae! Impedit nihil mollitia cupiditate enim est sit nobis quo, delectus, labore sapiente esse at deserunt ab minima veritatis architecto laudantium!</p>
     </div>
     <hr>
@@ -119,14 +154,20 @@
             <div class="modal-content">
         <!-- Modal Header -->
         <div class="modal-header" style="color: black;">
-        <h4 class="modal-title">CABEZA DE LA VENTANA MODAL</h4>
+        <h4 class="modal-title">PERFIL PROFESIONAL</h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
         </div>
 
         <!-- Modal body -->
-        <div class="modal-body" style="color: black;">
+        <div class="modal-body" style="color: black;" >
         ESTE ES EL CUERPO DE LA VENTANA MODAL
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, cum. Minus, dicta eos? Vitae, nulla. Et possimus in obcaecati pariatur adipisci dolorum aut a nihil. Veritatis quo facilis perspiciatis maiores?
+        <p><img src="img/img1.jpg" alt="" width="350px"></p>
+        <p>Nombre: Gabriel chavez bautista</p>
+        <P>Carrera: Pregrado de ingenieria de sistemas</P>
+        <p>Estado: Inactivo</p>
+        <p>Edad: 19 años</p>
+        <p>Expariencia: 0 años</p>
+        <p>Especializacion: Desarrollo de software</p>
         </div>
 
         <!-- Modal footer -->
