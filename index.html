@@ -131,8 +131,106 @@
             </div>
         <!-- FIN CARDS -->
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi, beatae! Impedit nihil mollitia cupiditate enim est sit nobis quo, delectus, labore sapiente esse at deserunt ab minima veritatis architecto laudantium!</p>
+<!-- INICIO COLLAPSE -->
+<div class="container mt-3">
+    <h2>Ejemplo de acordion</h2>
+    <p><strong>Note:</strong> The <strong>data-bs-parent</strong> attribute makes sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+    <div id="accordion">
+    <div class="card" style="background-color: yellowgreen;">
+        <div class="card-header">
+        <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
+            Collapsible Group Item #1
+        </a>
+        </div>
+        <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+        </div>
+    </div>
+    <div class="card" style="background-color: beige;">
+        <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
+        Collapsible Group Item #2
+        </a>
+        </div>
+        <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+        </div>
+    </div>
+    <div class="card" style="background-color: tomato;">
+        <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
+            Collapsible Group Item #3
+        </a>
+        </div>
+        <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+        </div>
+    </div>
+    <div class="card" style="background-color: aquamarine;">
+        <div class="card-header">
+        <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseFour">
+            Collapsible Group Item #4
+        </a>
+        </div>
+        <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </div>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- FIN COLLAPSE -->
     </div>
     <hr>
+
+    <!-- INICIO SCROLLSPY -->
+    <div data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+        <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+            <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link" href="#section1">Seccion 1</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#section2">Seccion 2</a>
+                </li>
+                <li class="nav-item">
+                <a class="nav-link" href="#section3">Seccion 3</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+        
+        <div id="section1" class="container-fluid bg-success text-white" style="padding:100px 20px;">
+            <h1>Seccion 1</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            <img src="img/heart.jpg" alt="" width="100%">
+        </div>
+        
+        <div id="section2" class="container-fluid bg-warning" style="padding:100px 20px;">
+            <h1>Seccion 2</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            <img src="img/ScreenShot_20231009155820.jpg" alt="" width="100%">
+        </div>
+        
+        <div id="section3" class="container-fluid bg-secondary text-white" style="padding:100px 20px;">
+            <h1>Seccion 3</h1>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+            <img src="img/descarga-removebg-preview.png" alt="" width="100%">
+        </div>
+    </div>
+    <!-- FIN SCROLLSPY -->
+    
     <h2>dividir nuestra pagina web</h2>
     <h2>grid-12 columnas</h2>
     <br>
@@ -161,7 +259,7 @@
         <!-- Modal body -->
         <div class="modal-body" style="color: black;" >
         ESTE ES EL CUERPO DE LA VENTANA MODAL
-        <p><img src="img/img1.jpg" alt="" width="350px"></p>
+        <p><img src="img/img1.jpg" alt="" width="100%"></p>
         <p>Nombre: Gabriel chavez bautista</p>
         <P>Carrera: Pregrado de ingenieria de sistemas</P>
         <p>Estado: Inactivo</p>
